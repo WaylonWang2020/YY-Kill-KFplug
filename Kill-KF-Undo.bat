@@ -1,5 +1,5 @@
 @ECHO OFF
-::WRITE BY 文丶心
+::WRITE-BY-文丶心
 ::没那么神奇，就一个BAT脚本
 >NUL 2>&1 REG.exe query "HKU\S-1-5-19" || (
     ECHO SET UAC = CreateObject^("Shell.Application"^) > "%TEMP%\Getadmin.vbs"
