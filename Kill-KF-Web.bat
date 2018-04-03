@@ -19,7 +19,7 @@ app.kf.yy.com
  echo 127.0.0.1 %%A>>%hosts%
 )
 
-echo. & echo 已屏蔽客服模板WEB界面显示.
+echo. 
 
 ipconfig /flushdns
 
