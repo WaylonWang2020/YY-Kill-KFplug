@@ -10,7 +10,6 @@
 )
 ::以上代码用于在批处理中提升权限
 
-
 SET hosts=%windir%\system32\drivers\etc\hosts
 attrib -r %hosts%
 echo. >>%hosts%
@@ -20,7 +19,7 @@ template2.dl.yy.com
 ) DO (
  echo 127.0.0.1 %%A>>%hosts%
 )
-echo. 
+echo . 
 ipconfig /flushdns
 echo . 
 

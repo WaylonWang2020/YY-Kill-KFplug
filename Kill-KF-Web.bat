@@ -19,8 +19,6 @@ app.kf.yy.com
  echo 127.0.0.1 %%A>>%hosts%
 )
 
-echo. 
-
+echo . 
 ipconfig /flushdns
-
 echo . 
