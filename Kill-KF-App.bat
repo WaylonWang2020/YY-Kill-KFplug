@@ -1,6 +1,6 @@
 @ECHO OFF
-::WRITE-BY-ÎÄØ¼ĞÄ
-::Ã»ÄÇÃ´ÉñÆæ£¬¾ÍÒ»¸öBAT½Å±¾
+
+::æ²¡é‚£ä¹ˆç¥å¥‡ï¼Œå°±ä¸€ä¸ªBATè„šæœ¬
 >NUL 2>&1 REG.exe query "HKU\S-1-5-19" || (
     ECHO SET UAC = CreateObject^("Shell.Application"^) > "%TEMP%\Getadmin.vbs"
     ECHO UAC.ShellExecute "%~f0", "%1", "", "runas", 1 >> "%TEMP%\Getadmin.vbs"
@@ -8,7 +8,7 @@
     DEL /f /q "%TEMP%\Getadmin.vbs" 2>NUL
     Exit /b
 )
-::ÒÔÉÏ´úÂëÓÃÓÚÔÚÅú´¦ÀíÖĞÌáÉıÈ¨ÏŞ
+::ä»¥ä¸Šä»£ç ç”¨äºåœ¨æ‰¹å¤„ç†ä¸­æå‡æƒé™
 
 taskkill /F /IM yybrowser.exe
 taskkill /F /IM yyplatform.exe
